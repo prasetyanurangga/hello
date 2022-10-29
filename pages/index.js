@@ -3,6 +3,7 @@ import { motion, usePresence, AnimatePresence } from "framer-motion";
 import Color from "color";
 import { faker } from "@faker-js/faker";
 import parse from "html-react-parser";
+import Link from "next/link";
 
 const colorStart = Color("#FF9900");
 const colorEnd = Color("#FF320D");
@@ -111,18 +112,33 @@ export default function App() {
                       )}
                       {item && item.id == "3" && (
                         <div className="flex flex-row gap-x-2 mt-2">
-                          <img
-                            src="https://avatars.githubusercontent.com/u/35420062?v=4"
-                            className={`h-[80px] w-[80px] rounded-lg`}
-                          />
-                          <img
-                            src="https://avatars.githubusercontent.com/u/35420062?v=4"
-                            className={`h-[80px] w-[80px] rounded-lg`}
-                          />
-                          <div className="w-[80px] h-[80px] rounded-lg bg-gray-400 text-sm  flex flex-col justify-center items-center">
-                            <span className="text-sm">5+</span>
-                            <span className="text-xs">Show all</span>
-                          </div>
+                          <Link
+                            href="https://angganurprasetya.dev/detail_open_project/ipod"
+                            className="cursor-pointer"
+                          >
+                            <img
+                              src="https://angganurprasetya.dev/img/ipod.png"
+                              className={`h-[80px] w-[80px] rounded-lg`}
+                            />
+                          </Link>
+                          <Link
+                            href="https://angganurprasetya.dev/detail_professional_project/tandhur"
+                            className="cursor-pointer"
+                          >
+                            <img
+                              src="https://angganurprasetya.dev/img/tandhur.png"
+                              className={`h-[80px] w-[80px] rounded-lg`}
+                            />
+                          </Link>
+                          <Link
+                            className="cursor-pointer"
+                            href="https://angganurprasetya.dev"
+                          >
+                            <div className="w-[80px] h-[80px] rounded-lg bg-gray-400 text-sm  flex flex-col justify-center items-center">
+                              <span className="text-sm">5+</span>
+                              <span className="text-xs">Show all</span>
+                            </div>
+                          </Link>
                         </div>
                       )}
                     </div>
