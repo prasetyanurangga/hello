@@ -64,16 +64,16 @@ export default function App() {
   return (
     <div className={`flex items-center justify-center h-screen w-screen`}>
       <div
-        className={`flex h-[700px] w-[500px] space-y-4 p-5 flex-row items-center justify-center `}
+        className={`flex h-[700px] w-[500px] px-5 flex-row items-center justify-center `}
       >
         <div className={`h-full flex justify-end flex-col`}>
           <img
             src="https://avatars.githubusercontent.com/u/35420062?v=4"
-            className={`h-[50px] w-[50px] rounded-full`}
+            className={`h-[70px] w-[70px] rounded-full`}
           />
         </div>
         <div
-          className={`h-full flex justify-end flex-col overflow-y-hidden overflow-x-hidden p-5 gap-y-3`}
+          className={`h-full flex justify-end flex-col overflow-y-hidden overflow-x-hidden px-5 gap-y-3`}
         >
           <AnimatePresence>
             {[...items].map((item, i) => (
@@ -81,7 +81,7 @@ export default function App() {
                 {item == "loading" ? (
                   <div className="w-[300px] flex flex-col items-start justify-center">
                     <div
-                      className={`px-4 items-center  break-all justify-center flex flex-row py-4 border-2 border-gray-200 w-[70px]
+                      className={`px-2 items-center  break-all justify-center flex flex-row py-3 border-2 border-gray-200 w-[70px]
      gap-x-[2px] rounded-xl`}
                     >
                       <div
